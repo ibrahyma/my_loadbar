@@ -1,0 +1,77 @@
+$container_size: 40vw;
+$loadbar_delay: 100ms;
+
+@mixin totallyCenterContents
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin loadbar_style($i, $reverse)
+{
+    animation: loadbar 1s infinite ease-in-out;
+    animation-delay: $loadbar_delay * $i;
+    height: 100%;
+    margin-right: 10%;
+    width: 10%;
+
+    @if $reverse {
+        animation-direction: alternate-reverse;
+    } @else {
+        animation-direction: alternate;
+    }
+}
+
+@keyframes loadbar
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+    100%
+    {
+        transform: scaleY(0.1);
+    }
+}
+
+body
+{
+    @include totallyCenterContents;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container
+{
+    height: $container_size;
+    width: $container_size;
+
+    .load
+    {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        
+        @for $i from 1 through 5
+        {
+            &__bar--#{$i}
+            {
+                @include loadbar_style($i, false);
+                background: lightgreen;
+            }
+        }
+    
+        @for $i from 1 through 5
+        {
+            &__bar--#{$i}-inv
+            {
+                @include loadbar_style($i, true);
+                background: darkblue;
+            }
+        }
+    }
+}

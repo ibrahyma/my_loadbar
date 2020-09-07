@@ -1,0 +1,103 @@
+@keyframes loadbar {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scaleY(0.1); } }
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0; }
+
+.container {
+  height: 40vw;
+  width: 40vw; }
+  .container .load {
+    display: flex;
+    height: 50%;
+    width: 100%; }
+    .container .load__bar--1 {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 100ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate;
+      background: lightgreen; }
+    .container .load__bar--2 {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 200ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate;
+      background: lightgreen; }
+    .container .load__bar--3 {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 300ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate;
+      background: lightgreen; }
+    .container .load__bar--4 {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 400ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate;
+      background: lightgreen; }
+    .container .load__bar--5 {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 500ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate;
+      background: lightgreen; }
+    .container .load__bar--1-inv {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 100ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate-reverse;
+      background: darkblue; }
+    .container .load__bar--2-inv {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 200ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate-reverse;
+      background: darkblue; }
+    .container .load__bar--3-inv {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 300ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate-reverse;
+      background: darkblue; }
+    .container .load__bar--4-inv {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 400ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate-reverse;
+      background: darkblue; }
+    .container .load__bar--5-inv {
+      animation: loadbar 1s infinite ease-in-out;
+      animation-delay: 500ms;
+      height: 100%;
+      margin-right: 10%;
+      width: 10%;
+      animation-direction: alternate-reverse;
+      background: darkblue; }
+
+/*# sourceMappingURL=style.css.map */
