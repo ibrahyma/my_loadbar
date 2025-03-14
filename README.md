@@ -1,2 +1,4 @@
 # my_loadbar
-Il s'agit d'une load bar que j'ai animé en CSS (avec le préprocesseur SASS)
+Il s'agit d'une load bar que j'ai animé en CSS (en scss)
+
+Démo : https://ibrahyma.github.io/my_loadbar/
